@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
 
   color-scheme: light dark;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #101116;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,8 +30,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: grid;
+  align-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
