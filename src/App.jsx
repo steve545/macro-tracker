@@ -85,10 +85,10 @@ function App() {
   }
 
   return (
-    <div className="grid h-[30rem] gap-3 m-2">
+    <div className="grid h-[30rem] gap-3 m-2 w-[26rem] md:w-[35rem]">
       <CalorieDifference calorieDifference={parseInt(calorieDifference)} />
-      <div className="m-0 w-full h-fit">
-        <form onSubmit={handleSubmit} className=" grid grid-cols-3 gap-10">
+      <div className="m-auto w-full h-fit md:w-[26rem]">
+        <form onSubmit={handleSubmit} className="grid grid-cols-3 gap-10">
           <input
             id="calories-consumed"
             className="text-slate-200 bg-[#2a2c36] col-span-2 p-2 shadow-md shadow-black rounded-lg  text-lg focus:ring-blue-500 focus:outline-none focus:ring-2 placeholder:font-regular placeholder:italic placeholder:text-sm"

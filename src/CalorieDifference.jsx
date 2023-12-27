@@ -10,9 +10,9 @@ function CalorieDifference(props) {
   }
 
   return (
-    <div className="w-full h-40 m-auto relative">
-      <p className="text-7xl p-1 m-1 w-72 truncate absolute left-1/2 -translate-y-1/5 -translate-x-1/2">
-        <span id="calorieDifference" className={`peer ${colorClass}`}>
+    <div className="w-fit h-32 m-auto relative">
+      <p className="text-7xl p-1 m-1 w-96 truncate absolute left-1/2 -translate-y-1/5 -translate-x-1/2">
+        <span id="calorieDifference" className={`peer text-ellipsis overflow-hidden ${colorClass}`}>
           {" "}
           {Math.abs(props.calorieDifference)}
         </span>
@@ -20,7 +20,7 @@ function CalorieDifference(props) {
       {props.calorieDifference > 0 ? (
         <p
           id="differenceMsg"
-          className="hidden w-96 p-1 m-1 absolute left-1/2 -translate-y-1/5 -translate-x-1/2 bottom-0 font-regular text-sm"
+          className="hidden w-96 p-1 m-1 absolute left-1/2 translate-y-5 -translate-x-1/2 bottom-0 font-regular text-sm"
         >
           You are in a surplus and have passed your calorie goal by{" "}
           {props.calorieDifference} calories.
@@ -28,7 +28,7 @@ function CalorieDifference(props) {
       ) : props.calorieDifference == 0 ? (
         <p
           id="differenceMsg"
-          className="hidden w-96 p-1 m-1  absolute left-1/2 -translate-y-1/5 -translate-x-1/2 bottom-0 font-regular text-sm"
+          className="hidden w-96 p-1 m-1 absolute left-1/2 translate-y-5 -translate-x-1/2 bottom-0 font-regular text-sm"
         >
           You are at your calorie goal and don't need to consume any more
           calories.
@@ -36,7 +36,7 @@ function CalorieDifference(props) {
       ) : (
         <p
           id="differenceMsg"
-          className="hidden w-96 p-1 m-1  absolute left-1/2 -translate-y-1/5 -translate-x-1/2 bottom-0 font-regular text-sm"
+          className="hidden w-96 p-1 m-1 absolute left-1/2 translate-y-5 -translate-x-1/2 bottom-0 font-regular text-sm"
         >
           You are in a deficit and need to consume{" "}
           {Math.abs(props.calorieDifference)} calories to meet your calorie
