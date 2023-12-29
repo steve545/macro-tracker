@@ -16,8 +16,7 @@ function App() {
   let updatedCalorieGoal = 0;
 
   const baseUrl = "https://api.fitbit.com/1/user/-/";
-  const access_token =
-    "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM1JQN1IiLCJzdWIiOiJCSldaTlkiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd2VjZyB3c29jIHdhY3Qgd294eSB3dGVtIHd3ZWkgd2NmIHdzZXQgd2xvYyB3cmVzIiwiZXhwIjoxNzAzNDQwNDU5LCJpYXQiOjE3MDM0MTE2NTl9.Cxze48w07FmDciadWgf1IO0tTRQSdk7Z8PyeuA1-h9w";
+  const access_token = "";
 
   useEffect(() => {
     axios({
